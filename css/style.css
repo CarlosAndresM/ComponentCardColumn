@@ -14,9 +14,9 @@ body{
 
 .container{
 	display: flex;
-	max-width: 70rem;
-	width: 60rem;
-	height: 30rem;
+	max-width: 60rem;
+	min-width: 50rem;
+	height: max-content;
 	border-radius: 0.4rem;
 	overflow: hidden;
 	box-shadow: 3px 3px 6px 4px #011e1e29;
@@ -64,12 +64,12 @@ img{
 	background-color: #fff;
 	cursor: pointer; 
 	width: 10rem;
-	height: 4rem;
+	height: 3rem;
 	border-radius: 5rem;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-
+	
 	text-decoration: none;
 	
 }
@@ -106,3 +106,39 @@ img{
 	border: 1px solid #fff;
 	color: #fff;
 }
+
+
+
+@media only screen and (max-width: 750px) {
+	body{
+		height: 190vh;
+	}
+	.container{
+		
+	flex-direction: column;
+	max-width: 500px;
+	min-width: 200px;
+	width: 310px;
+	
+	height:max-content;
+	
+	overflow-y: hidden;
+	}
+	
+.box{
+	display: flex; 
+	padding: 2.5rem;	
+}
+.paragraph{ 
+	margin-bottom: 3rem;
+ 
+	padding-right: 20px;
+}
+.btn{ 
+	width: 10rem;
+	height: 3.5rem;
+	 
+	
+}
+
+} 
